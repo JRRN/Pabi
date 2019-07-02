@@ -11,7 +11,17 @@
     Height="600"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <controls:CameraPreview x:Name="CameraPreview"></controls:CameraPreview>
+    <Grid Background="BlueViolet">
+        <controls:CameraPreview x:Name="CameraPreview" 
+                                Width="500" Height="300" 
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Top"></controls:CameraPreview>
+        <Canvas Name="YoloCanvas" Width="500" Height="300"
+                Grid.Row="0" HorizontalAlignment="Left" 
+                VerticalAlignment="Top"/>
+        <TextBlock Width="500" Height="300" 
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Top"
+                   x:Name="TextBlockInformation" ></TextBlock>
     </Grid>
 </Page>
